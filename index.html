@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitgroup</title>
-    <link rel="stylesheet" href="style.css">
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap"
@@ -18,32 +22,50 @@
 <body>
 
     <!--Encabezado-->
-
+<!-- 
     <header class="encabezado">
 
         <img src="" alt="logo" title="logo" class="logo">
 
-    <!--menu-->
+    
         <nav class="navMenu">
             <ul class="listaNav">
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="actividades.html">Actividades</a>
+                    <a href="./secciones/actividades.html">Actividades</a>
                 </li>
                 <li>
-                    <a href="nosotros.html">Nosotros</a>
+                    <a href="./secciones/nosotros.html">Nosotros</a>
                 </li>
                 <li>
-                    <a href="novedades.html">Novedades</a>
+                    <a href="/secciones/novedades.html">Novedades</a>
                 </li>
                 <li>
-                    <a href="inscribite.html" class="inscribite">INSCRIBITE</a>
+                    <a href="/secciones/inscribite.html" class="inscribite">INSCRIBITE</a>
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg encabezado">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav navMenu">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="./secciones/actividades.html">Actividades</a>
+              <a class="nav-link"  href="./secciones/nosotros.html">Nosotros</a>
+              <a class="nav-link" href="./secciones/novedades.html">Novedades</a>
+              <a class="nav-link inscribite"  href="./secciones/inscribite.html">Inscribite</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <!---pantalla principal-->
 
@@ -54,7 +76,7 @@
 
         <h1 class="fitgroup">Fit<i>Group</i></h1>
 
-        <p class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos iure similique quaerat beatae recusandae? Saepe dignissimos earum unde optio laborum et ex, commodi repudiandae, quos fugiat neque aspernatur quisquam omnis.</p>
+        <p class="intro">contribuimos a que cada persona pueda crear y mantener una condición física saludable a través de programas de entrenamiento y nutrición por medio de hábitos que hacen bien al cuerpo, la mente y las emociones.</p>
 
     </main>
 
@@ -72,6 +94,10 @@
             <a href="https://www.instagram.com" target="_blank"><i class=" instagram fa-brands fa-instagram"></i></a>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 
 </html>
