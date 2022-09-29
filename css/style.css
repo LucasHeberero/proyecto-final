@@ -59,20 +59,32 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: solid 2px rgb(143, 227, 207);
-    grid-area: footer;
+}
+
+.newsletter{
+    width: 30rem;
+    margin-left: 1.5rem;
+    padding: 1rem;
+    
 }
 
 .newsletter p {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 100;
     color:rgb(143, 227, 207);
-    margin-left: 5%;
 }
 
 .newsletter input {
-    margin-left: 5%;
+    background-color:rgb(57, 91, 100);
+    color: rgb(231, 246, 242);
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .redes {
-    width: 15%;
+    width: 20rem;
     display: flex;
     justify-content: space-around;
 
@@ -235,7 +247,8 @@ i{
 }
 
 .entrenador {
-    border: solid 1px rgb(57, 91, 100);
+    width: 30%;
+    border: solid 2px rgb(57, 91, 100);
     border-radius: 10%;
     padding: 1rem;
     margin: 2rem;
@@ -245,6 +258,7 @@ i{
 .entrenador img {
     border-radius: 10%;
     width: 70%;
+    height: 20rem;
 }
 
 .entrenador h3 {
@@ -255,16 +269,19 @@ i{
 .entrenador p {
     color: rgb(231, 246, 242);
     font-size: 1.8rem;
+    text-align: justify;
+    padding: 1rem;
 }
 
 .contacto {
     display: flex;
     justify-content: space-around;
     padding-bottom: 5rem;
+    
 }
 
 .contacto iframe {
-    width: 40rem;
+    width: 35rem;
     height: 30rem;
 }
 
@@ -288,7 +305,7 @@ i{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 2rem;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -312,8 +329,8 @@ i{
 
 .notaImg {
     margin: 0 auto;
-    width: auto;
-    height: auto;
+    width: 19rem;
+    height: 17em;
     max-width: 20rem;
     max-height: 20rem;
     
@@ -411,8 +428,9 @@ i{
 }
 
 .botonInscribite {
+    font-size: 2rem;
     border-radius: 1rem;
-    background-color:rgb(44, 51, 51);
+    background-color:rgb(57, 91, 100);
     color: rgb(231, 246, 242);
     padding: 2rem;
     font-weight: 700;
@@ -421,7 +439,7 @@ i{
 }
 
 .botonInscribite:hover {
-    background-color:rgb(57, 91, 100);
+    background-color:rgb(44, 51, 51);
 }
 
 /* RESPONSIVE */
@@ -430,6 +448,10 @@ i{
 
 
 /* FOOTER */
+
+.newsletter{
+    display: none;
+}
 
 /* INDEX */
 
@@ -472,7 +494,7 @@ i{
 }
 
 .articulo {
-    width: 60%;
+    width: 80%;
 }
 
 .musculacion {
@@ -498,10 +520,24 @@ i{
         flex-direction: column;
     }
 
+.entrenador {
+     width: 90%;
+    }
+
+
 .contacto {
         display: flex;
         flex-direction: column;
+        margin: 1rem auto;
     }
+
+    .tituloNosotros {
+        font-size: 3rem;
+    }
+
+
+
+
 
 }
 
