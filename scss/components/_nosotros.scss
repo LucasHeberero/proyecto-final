@@ -1,0 +1,103 @@
+@import '../base/listas';
+
+
+.bodyNosotros {
+    background-color: nth($colores, 1);
+
+    .tituloNosotros {
+        font-size: nth($font-size, 4);
+        text-align: center;
+        background-color: nth($colores, 1);
+        color: nth($colores, 3);
+        font-weight: 400;
+        margin: 2rem;
+
+        @media only screen and (max-width:450px){
+            font-size: 3rem;
+        }
+    }
+
+    .equipo {
+        display: flex;
+        justify-content: space-around;
+        margin:5rem;
+
+        @media only screen and (max-width:450px){
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .entrenador {
+            width: 30%;
+            border: solid 2px nth($colores, 2);
+            border-radius: 10%;
+            padding: 1rem;
+            margin: 2rem;
+            text-align: center;
+
+            @media only screen and (max-width:450px){
+                width: 90%;
+               }
+
+            img {
+                border-radius: 10%;
+                width: 70%;
+                height: 20rem;
+            }
+
+            h3 {
+                color: nth($colores, 4);
+                font-size: 3rem;
+            }
+
+            p {
+                color: nth($colores, 3);
+                font-size: 1.8rem;
+                text-align: justify;
+                padding: 1rem;
+            }
+        }
+        
+    }
+
+    .tituloContacto {
+        margin: 2rem;
+        font-size: nth($font-size, 4);
+        text-align: center;
+        background-color: nth($colores, 1);
+        color: nth($colores, 3);
+        font-weight: 400;
+
+        @media only screen and (max-width:450px){
+            font-size: 3rem;
+        }
+    
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 5rem;
+
+        @media only screen and (max-width:450px){
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto;
+        }
+        
+        iframe {
+            width: 35rem;
+            height: 30rem;
+        }
+        div {
+                margin-right: 10%;
+
+            h4 {
+                    color: nth($colores, 3);
+                    font-size: nth($font-size, 2);
+                    margin-top: 3rem;
+                    font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../base/listas';
+
+.encabezado {
+    height: 5.5rem;
+    background-color: nth($colores, 1);
+    border-bottom: solid nth($colores, 4);
+
+    .logo{
+        width: 6rem;
+    }
+
+    .navMenu {
+        font-size: 1.5rem;
+        margin: 1rem;
+
+        a {
+            color: nth($colores, 3);
+            padding: 1rem;
+            margin: 1rem;
+            transition: 0s;
+
+            &:hover {
+                border-radius: 1rem;
+                background-color:nth($colores, 4);
+                color: nth($colores, 1);
+            }  
+        
+        }
+
+        .inscribite {
+            border-radius: 1rem;
+            background-color:nth($colores, 4);
+            color: nth($colores, 1);
+
+            &:hover { 
+                color: nth($colores, 3);
+            }    
+        } 
+    }
+
+}

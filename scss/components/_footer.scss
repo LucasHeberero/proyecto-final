@@ -1,0 +1,62 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: nth($colores, 1);
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 2px nth($colores, 4);
+
+    .newsletter{
+        width: 30rem;
+        margin-left: 1.5rem;
+        padding: 1rem;
+
+        @media only screen and (max-width:450px){
+
+        display: none;
+        
+        } 
+            p {
+                display: inline-block;
+                font-size: nth($font-size, 1);
+                font-weight: 100;
+                color:nth($colores, 4);
+            }
+
+            input {
+                background-color:nth($colores, 2);
+                color: nth($colores, 3);
+                outline: none;
+                border-radius: 0.5rem;
+                font-size: nth($font-size, 1);
+            }
+
+    }
+
+    .redes {
+        width: 20rem;
+        display: flex;
+        justify-content: space-around;
+    
+        .whatsapp {
+            font-size: 3rem;
+            padding: 0.5rem;
+            color: green;
+        }
+        
+        .facebook {
+            font-size: 3rem;
+            padding: 0.5rem;
+            color: blue;
+        }
+        
+        .instagram {
+            font-size: 3rem;
+            padding: 0.5rem;
+            color:rgba(252, 40, 146, 0.781);
+        }
+
+    }
+}

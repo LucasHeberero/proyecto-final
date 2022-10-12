@@ -1,547 +1,490 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
-
-/* nav */
 
 .encabezado {
-    height: 5.5rem;
-    background-color: rgb(44, 51, 51);
-    border-bottom: solid 2px rgb(143, 227, 207);
+  height: 5.5rem;
+  background-color: rgb(44, 51, 51);
+  border-bottom: solid rgb(143, 227, 207);
+}
+.encabezado .logo {
+  width: 6rem;
+}
+.encabezado .navMenu {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.encabezado .navMenu a {
+  color: rgb(231, 246, 242);
+  padding: 1rem;
+  margin: 1rem;
+  transition: 0s;
+}
+.encabezado .navMenu a:hover {
+  border-radius: 1rem;
+  background-color: rgb(143, 227, 207);
+  color: rgb(44, 51, 51);
+}
+.encabezado .navMenu .inscribite {
+  border-radius: 1rem;
+  background-color: rgb(143, 227, 207);
+  color: rgb(44, 51, 51);
+}
+.encabezado .navMenu .inscribite:hover {
+  color: rgb(231, 246, 242);
 }
 
-
-.navMenu {
-    font-size: 1.5rem;
-    margin: 1rem;
-
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(44, 51, 51);
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 2px rgb(143, 227, 207);
 }
-
-.navMenu a {
-    color: rgb(231, 246, 242);
-    padding: 1rem;
-    margin: 1rem;
-    transition: 0s;
+.footer .newsletter {
+  width: 30rem;
+  margin-left: 1.5rem;
+  padding: 1rem;
 }
-
-.navMenu a:hover{
-    border-radius: 1rem;
-    background-color:rgb(143, 227, 207);
-    color: rgb(44, 51, 51);
-
+@media only screen and (max-width: 450px) {
+  .footer .newsletter {
+    display: none;
+  }
 }
-
-.inscribite {
-    border-radius: 1rem;
-    background-color:rgb(143, 227, 207);
-    color: rgb(44, 51, 51);
-    
+.footer .newsletter p {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: rgb(143, 227, 207);
 }
-
-/*footer*/
-
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 4rem;
-    background-color: rgb(44, 51, 51);
-    display: flex;
-    justify-content: space-between;
-    border-top: solid 2px rgb(143, 227, 207);
+.footer .newsletter input {
+  background-color: rgb(57, 91, 100);
+  color: rgb(231, 246, 242);
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
 }
-
-.newsletter{
-    width: 30rem;
-    margin-left: 1.5rem;
-    padding: 1rem;
-    
+.footer .redes {
+  width: 20rem;
+  display: flex;
+  justify-content: space-around;
 }
-
-.newsletter p {
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: 100;
-    color:rgb(143, 227, 207);
+.footer .redes .whatsapp {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: green;
 }
-
-.newsletter input {
-    background-color:rgb(57, 91, 100);
-    color: rgb(231, 246, 242);
-    outline: none;
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
+.footer .redes .facebook {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: blue;
 }
-
-.redes {
-    width: 20rem;
-    display: flex;
-    justify-content: space-around;
-
+.footer .redes .instagram {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: rgba(252, 40, 146, 0.781);
 }
-
-.whatsapp {
-    font-size: 3rem;
-    padding: 0.5rem;
-    color: green;
-}
-
-.facebook {
-    font-size: 3rem;
-    padding: 0.5rem;
-    color: blue;
-}
-
-.instagram {
-    font-size: 3rem;
-    padding: 0.5rem;
-    color:rgba(252, 40, 146, 0.781);
-}
-
-/* Index */
 
 video {
-
-    min-width: 100%;
-    min-height: 100%;   
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-    opacity: 0.75;
-
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  opacity: 0.75;
 }
-
 
 .contenidoPrincipal {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
-.fitgroup {
-    display: flex;
-    justify-content: center;
-    margin-top: 15%;
-    font-size: 10rem;
-    color:rgb(57, 91, 100);
-    font-weight: 900;
-
+.contenidoPrincipal .fitgroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  font-size: 10rem;
+  color: rgb(57, 91, 100);
+  font-weight: 900;
 }
-
-.intro {
-    display: flex;
-    font-size: 2rem;
-    color:rgb(231, 246, 242);
-    font-weight: 700;
-    text-align: center;
-    margin-top: 10%;
-    background-color:rgb(57, 91, 100);
-    opacity: 0.80;
-}
-
-i{
-    color: rgb(143, 227, 207);
-}
-
-/* Actividades */
-
-.bodyActividades{
-    background-color: rgb(44, 51, 51);
-}
-
-.tituloActividades {
-    font-size: 7rem;
-    text-align: center;
-    background-color: rgb(44, 51, 51);
-    color: rgb(231, 246, 242);
-    font-weight: 400;
-    margin: 2rem;
-}
-
-.actividades {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.articulo {
-    width: 40%;
-    margin: 2rem;
-    border-radius: 10%;
-    background-color: rgb(57, 91, 100);
-    padding: 2rem;
-    margin-bottom: 5rem;
-    text-align: center;
-}
-
-.musculacion {
-    margin-bottom: 20rem;
-}
-
-.palochino {
-    margin-top: 20rem;
-}
-
-.funcional {
-    margin-bottom: 30rem;
-}
-
-.tela {
-    margin-top: 20rem;
-    margin-bottom: 12rem;
-}
-
-.articuloImg {
-
-    width: 90%;
-    height: auto;
-    max-width: 50rem;
-    max-height: 50rem;
-    border-radius: 10%;
-}
-
-.tituloArticulo {
-    font-size: 3rem;
-    color: rgb(231, 246, 242);
-}
-
-.descripcionActividad {
-    font-size: 2rem;
-    color: rgb(231, 246, 242);
-    text-align: justify;
-    padding: 1rem;
-} 
-
-/* nosotros */
-
-.contenido {
-    grid-area: contenido;
-}
-
-.tituloNosotros{
-    margin: 2rem;
-    font-size: 6rem;
-    text-align: center;
-    background-color: rgb(44, 51, 51);
-    color: rgb(231, 246, 242);
-    font-weight: 400;
-
-}
-
-.equipo {
-    display: flex;
-    justify-content: space-around;
-    margin:5rem;
-    
-}
-
-.entrenador {
-    width: 30%;
-    border: solid 2px rgb(57, 91, 100);
-    border-radius: 10%;
-    padding: 1rem;
-    margin: 2rem;
-    text-align: center;
-}
-
-.entrenador img {
-    border-radius: 10%;
-    width: 70%;
-    height: 20rem;
-}
-
-.entrenador h3 {
-    color: rgb(143, 227, 207);
-    font-size: 3rem;
-}
-
-.entrenador p {
-    color: rgb(231, 246, 242);
-    font-size: 1.8rem;
-    text-align: justify;
-    padding: 1rem;
-}
-
-.contacto {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5rem;
-    
-}
-
-.contacto iframe {
-    width: 35rem;
-    height: 30rem;
-}
-
-.contacto div {
-    margin-right: 10%;
-}
-.contacto div h4 {
-    color: rgb(231, 246, 242);
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    font-weight: 400;
-}
-
-/* novedades*/
-
-.parent {
-    margin: 3rem auto;
-    width: 80%;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 2rem;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 4; }
-    .div3 { grid-area: 2 / 1 / 3 / 2; }
-    .div4 { grid-area: 2 / 2 / 3 / 4; }
-    .div5 { grid-area: 3 / 1 / 4 / 2; }
-    .div6 { grid-area: 3 / 2 / 4 / 4; }
-    .div7 { grid-area: 4 / 1 / 5 / 2; }
-    .div8 { grid-area: 4 / 2 / 5 / 4; }
-    .div9 { grid-area: 5 / 1 / 6 / 2; }
-    .div10 { grid-area: 5 / 2 / 6 / 4; }
-
-.imgContenedor {
-    text-align: center;
-}
-
-.contenidoNota:hover {
-    background-color: rgb(57, 91, 100);
-}
-
-.notaImg {
-    margin: 0 auto;
-    width: 19rem;
-    height: 17em;
-    max-width: 20rem;
-    max-height: 20rem;
-    
-
-}
-
-.tituloNota{
-    color: rgb(165, 201, 202);
-    font-size: 2rem;
-}
-
-.tituloNota:hover {
-    color: rgb(231, 246, 242);
-}
-
-.contenidoNota  h3 {
-   color: rgb(165, 201, 202);
-   font-size: 1.5rem;
-   font-weight: 200;
-   margin: 2rem 0;
-}
-
-/* inscribite*/
-
-.tituloInscribite {
-    margin: 2rem;
-    font-size: 6rem;
-    text-align: center;
-    color: rgb(231, 246, 242);
-    font-weight: 400;
-}
-
-.contenedorFormulario {
-    display: flex;
-    justify-content: center;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    width: 35rem;
-}
-
-.input {
-    margin-top: 10%;
-    font-size: 1.5rem;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    background-color:rgb(57, 91, 100);
-    color: rgb(231, 246, 242);
-    outline: none;
-
-}
-
-.input:focus {
-    border: 1rem  rgb(231, 246, 242);
-} 
-
-.planes {
-    display: flex;
-    justify-content: center;
-}
-
-
-.planes-opciones {
-    margin: 5rem;
-    width: 25rem;
-    height: 20rem;
-    background-color: rgb(57, 91, 100);
-    border: solid 0.4rem 1rem rgb(231, 246, 242);
-    border-radius: 10%;
-    transition: all 1s ease;
-
-}
-
-.planes-opciones:hover {
-    background-color:rgb(44, 51, 51);
-}
-
-.contenidoPlanes {
-    font-size: 1.5rem;
-    color: rgb(231, 246, 242);
-    text-align: center;
-    padding: 1rem;
-}
-
-.contenidoPlanes h3 {
-    margin: 2rem 0;
-}
-
-
-.contenedorBoton {
-    display: flex;
-    justify-content: center;
-}
-
-.botonInscribite {
-    font-size: 2rem;
-    border-radius: 1rem;
-    background-color:rgb(57, 91, 100);
-    color: rgb(231, 246, 242);
-    padding: 2rem;
-    font-weight: 700;
-    margin-bottom: 4rem;
-    transition: all 1s ease;
-}
-
-.botonInscribite:hover {
-    background-color:rgb(44, 51, 51);
-}
-
-/* RESPONSIVE */
-
-@media only screen and (max-width:450px) {
-
-
-/* FOOTER */
-
-.newsletter{
-    display: none;
-}
-
-/* INDEX */
-
-.contenidoPrincipal {
-    display: flex;
-    flex-direction: column;
-}
-
-.fitgroup {
+@media only screen and (max-width: 450px) {
+  .contenidoPrincipal .fitgroup {
     margin-top: 17rem;
     font-size: 6rem;
     font-weight: 900;
-
+  }
 }
-
-.intro {
+.contenidoPrincipal .fitgroup i {
+  color: rgb(143, 227, 207);
+}
+.contenidoPrincipal .intro {
+  display: flex;
+  font-size: 2rem;
+  color: rgb(231, 246, 242);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10%;
+  background-color: rgb(57, 91, 100);
+  opacity: 0.8;
+}
+@media only screen and (max-width: 450px) {
+  .contenidoPrincipal .intro {
     font-size: 1.2rem;
     margin-top: 10rem;
     font-weight: 300;
+  }
 }
 
-
-/* ACTIVIDADES */
-
-.tituloActividades {
+.bodyActividades {
+  background-color: rgb(44, 51, 51);
+}
+.bodyActividades .tituloActividades {
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgb(44, 51, 51);
+  color: rgb(231, 246, 242);
+  font-weight: 400;
+  margin: 2rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyActividades .tituloActividades {
     font-size: 3rem;
+  }
 }
-
-.actividades {
+.bodyActividades .actividades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades {
     display: flex;
     justify-content: center;
+  }
 }
-
-.tituloArticulo {
-    font-size: 1.6rem;
+.bodyActividades .actividades .articulo {
+  width: 40%;
+  margin: 2rem;
+  border-radius: 10%;
+  background-color: rgb(57, 91, 100);
+  padding: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
 }
-
-.descripcionActividad{
-    font-size: 1.2rem;
-}
-
-.articulo {
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades .articulo {
     width: 80%;
+  }
 }
-
-.musculacion {
+.bodyActividades .actividades .articulo .articuloImg {
+  width: 90%;
+  height: auto;
+  max-width: 50rem;
+  max-height: 50rem;
+  border-radius: 10%;
+}
+.bodyActividades .actividades .articulo .tituloArticulo {
+  font-size: 3rem;
+  color: rgb(231, 246, 242);
+  font-weight: 700;
+}
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades .articulo .tituloArticulo {
+    font-size: 1.2rem;
+  }
+}
+.bodyActividades .actividades .articulo .descripcionActividad {
+  font-size: 2rem;
+  color: rgb(231, 246, 242);
+  text-align: justify;
+  padding: 1rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades .articulo .descripcionActividad {
+    font-size: 1.2rem;
+  }
+}
+.bodyActividades .actividades .musculacion {
+  margin-bottom: 20rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades .musculacion {
     margin: 3rem;
+  }
 }
-
-.palochino {
-    margin-top: 3rem;
+.bodyActividades .actividades .palochino {
+  margin-top: 20rem;
 }
-
-.funcional {
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades .palochino {
     margin: 3rem;
+  }
 }
-
-.tela {
+.bodyActividades .actividades .funcional {
+  margin-bottom: 30rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades .funcional {
     margin: 3rem;
+  }
+}
+.bodyActividades .actividades .tela {
+  margin-top: 20rem;
+  margin-bottom: 12rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyActividades .actividades .tela {
+    margin: 3rem;
+  }
 }
 
-    /* SECCION NOSOTROS */
-
-.equipo {
-        display: flex;
-        flex-direction: column;
-    }
-
-.entrenador {
-     width: 90%;
-    }
-
-
-.contacto {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem auto;
-    }
-
-    .tituloNosotros {
-        font-size: 3rem;
-    }
-
-
-
-
-
+.bodyNosotros {
+  background-color: rgb(44, 51, 51);
+}
+.bodyNosotros .tituloNosotros {
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgb(44, 51, 51);
+  color: rgb(231, 246, 242);
+  font-weight: 400;
+  margin: 2rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .tituloNosotros {
+    font-size: 3rem;
+  }
+}
+.bodyNosotros .equipo {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .equipo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bodyNosotros .equipo .entrenador {
+  width: 30%;
+  border: solid 2px rgb(57, 91, 100);
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 2rem;
+  text-align: center;
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .equipo .entrenador {
+    width: 90%;
+  }
+}
+.bodyNosotros .equipo .entrenador img {
+  border-radius: 10%;
+  width: 70%;
+  height: 20rem;
+}
+.bodyNosotros .equipo .entrenador h3 {
+  color: rgb(143, 227, 207);
+  font-size: 3rem;
+}
+.bodyNosotros .equipo .entrenador p {
+  color: rgb(231, 246, 242);
+  font-size: 1.8rem;
+  text-align: justify;
+  padding: 1rem;
+}
+.bodyNosotros .tituloContacto {
+  margin: 2rem;
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgb(44, 51, 51);
+  color: rgb(231, 246, 242);
+  font-weight: 400;
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .tituloContacto {
+    font-size: 3rem;
+  }
+}
+.bodyNosotros .contacto {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+}
+.bodyNosotros .contacto iframe {
+  width: 35rem;
+  height: 30rem;
+}
+.bodyNosotros .contacto div {
+  margin-right: 10%;
+}
+.bodyNosotros .contacto div h4 {
+  color: rgb(231, 246, 242);
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  font-weight: 400;
 }
 
-/* 
-@media only screen and (min-width:451px) and (max-width:960px) {
+.bodyNovedades {
+  background-color: rgb(44, 51, 51);
+}
+.bodyNovedades .parent {
+  margin: 3rem auto;
+  width: 80%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 2rem;
+}
+.bodyNovedades .parent .div1 {
+  grid-area: 1/1/2/2;
+}
+.bodyNovedades .parent .div2 {
+  grid-area: 1/2/2/4;
+}
+.bodyNovedades .parent .div3 {
+  grid-area: 2/1/3/2;
+}
+.bodyNovedades .parent .div4 {
+  grid-area: 2/2/3/4;
+}
+.bodyNovedades .parent .div5 {
+  grid-area: 3/1/4/2;
+}
+.bodyNovedades .parent .div6 {
+  grid-area: 3/2/4/4;
+}
+.bodyNovedades .parent .div7 {
+  grid-area: 4/1/5/2;
+}
+.bodyNovedades .parent .div8 {
+  grid-area: 4/2/5/4;
+}
+.bodyNovedades .parent .div9 {
+  grid-area: 5/1/6/2;
+}
+.bodyNovedades .parent .div10 {
+  grid-area: 5/2/6/4;
+}
+.bodyNovedades .parent .imgContenedor {
+  text-align: center;
+}
+.bodyNovedades .parent .imgContenedor .notaImg {
+  margin: 0 auto;
+  width: 19rem;
+  height: 17em;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+.bodyNovedades .parent .contenidoNota .tituloNota {
+  color: rgb(143, 227, 207);
+  font-size: 2rem;
+}
+.bodyNovedades .parent .contenidoNota .tituloNota:hover {
+  color: rgb(231, 246, 242);
+}
+.bodyNovedades .parent .contenidoNota h3 {
+  color: rgb(231, 246, 242);
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 2rem 0;
+}
 
-} */
+.bodyInscribite {
+  background-color: rgb(44, 51, 51);
+}
+.bodyInscribite .tituloInscribite {
+  margin: 2rem;
+  font-size: 6rem;
+  text-align: center;
+  color: rgb(231, 246, 242);
+  font-weight: 400;
+}
+.bodyInscribite .contenedorFormulario {
+  display: flex;
+  justify-content: center;
+}
+.bodyInscribite .contenedorFormulario .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+}
+.bodyInscribite .contenedorFormulario .formulario .input {
+  margin-top: 10%;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(57, 91, 100);
+  color: rgb(231, 246, 242);
+  outline: none;
+}
+.bodyInscribite .contenedorFormulario .formulario .input:focus {
+  border: 1rem rgb(231, 246, 242);
+}
+.bodyInscribite .planes {
+  display: flex;
+  justify-content: center;
+}
+.bodyInscribite .planes .planes-opciones {
+  margin: 5rem;
+  width: 25rem;
+  height: 20rem;
+  background-color: rgb(57, 91, 100);
+  border: solid 0.4rem 1rem rgb(231, 246, 242);
+  border-radius: 10%;
+  transition: all 1s ease;
+}
+.bodyInscribite .planes .planes-opciones:hover {
+  background-color: rgb(44, 51, 51);
+}
+.bodyInscribite .planes .planes-opciones .contenidoPlanes {
+  font-size: 1.5rem;
+  color: rgb(231, 246, 242);
+  text-align: center;
+  padding: 1rem;
+}
+.bodyInscribite .planes .planes-opciones .contenidoPlanes h3 {
+  margin: 2rem 0;
+}
+.bodyInscribite .contenedorBoton {
+  display: flex;
+  justify-content: center;
+}
+.bodyInscribite .contenedorBoton .botonInscribite {
+  font-size: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(57, 91, 100);
+  color: rgb(231, 246, 242);
+  padding: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  transition: all 1s ease;
+}
+.bodyInscribite .contenedorBoton .botonInscribite:hover {
+  background-color: rgb(44, 51, 51);
+}
+
+/*# sourceMappingURL=style.css.map */
