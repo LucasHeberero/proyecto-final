@@ -69,7 +69,7 @@
         font-weight: 400;
 
         @media only screen and (max-width:450px){
-            font-size: 3rem;
+            font-size: nth($font-size, 3);
         }
     
     }
