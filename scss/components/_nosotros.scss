@@ -36,7 +36,7 @@
             text-align: center;
 
             @media only screen and (max-width:450px){
-                width: 90%;
+                width: 95%;
                }
 
             img {
@@ -55,6 +55,10 @@
                 font-size: 1.8rem;
                 text-align: justify;
                 padding: 1rem;
+
+                @media only screen and (max-width:450px) {
+                    font-size: nth($font-size, 2);
+                }
             }
         }
         
@@ -88,9 +92,21 @@
         iframe {
             width: 35rem;
             height: 30rem;
+            margin: 1.5rem;
+            box-shadow: 1rem 1rem 0.5rem  #9ac3d441;
+
+            @media only screen and (max-width:450px){
+                margin: 0 auto;
+                width: 30rem;
+            }
         }
         div {
                 margin-right: 10%;
+
+                @media only screen and (max-width:450px){
+                    padding: 1.5rem;
+                }
+
 
             h4 {
                     color: nth($colores, 3);

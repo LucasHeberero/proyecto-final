@@ -20,35 +20,49 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fcf05ac047.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fcf05ac047.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&family=Open+Sans:ital,wght@0,300;0,700;1,400&family=Oswald:wght@200;300;400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- Encabezado -->
+
 <header>
     <nav class="navbar navbar-expand-lg encabezado">
-        <div class="container-fluid">
-          <img src="./imagenes/logo.png" alt="logo" class="logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end contenedorNav" id="navbarNavAltMarkup">
-            <div class="navbar-nav navbar-dark navMenu">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-              <a class="nav-link" href="./secciones/actividades.html">Actividades</a>
-              <a class="nav-link"  href="./secciones/nosotros.html">Nosotros</a>
-              <a class="nav-link" href="./secciones/novedades.html">Novedades</a>
-              <a class="nav-link inscribite"  href="./secciones/inscribite.html">Inscribite</a>
-            </div>
-          </div>
+    <div class="container-fluid">
+        <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end menuMovil" id="navbarNav">
+        <ul class="navbar-nav navMenu">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./secciones/actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="./secciones/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./secciones/novedades.html">Novedades</a>
+            </li>
+            <li>
+                <a class="nav-link inscribite"  href="./secciones/inscribite.html">Inscribite</a> 
+            </li>
+        </ul>
         </div>
-      </nav>
+    </div>
+    </nav>
 </header>
+
+
     <!---pantalla principal-->
 
     <div class="videoback">
@@ -68,6 +82,7 @@
         <div class="newsletter">
             <p>Newsletter</p>
             <input type="text">
+            <button type="submit">Enviar</button>
         </div>
 
         <div class="redes">

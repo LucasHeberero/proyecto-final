@@ -19,10 +19,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/fcf05ac047.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fcf05ac047.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&family=Open+Sans:ital,wght@0,300;0,700;1,400&family=Oswald:wght@200;300;400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body class="bodyInscribite">
 
@@ -30,69 +30,85 @@
     <!--Encabezado-->
 <header>
     <nav class="navbar navbar-expand-lg encabezado">
-        <div class="container-fluid">
-            <img src="../imagenes/logo.png" alt="logo" class="logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav navMenu">
-              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              <a class="nav-link" href="actividades.html">Actividades</a>
-              <a class="nav-link"  href="nosotros.html">Nosotros</a>
-              <a class="nav-link" href="novedades.html">Novedades</a>
-              <a class="nav-link inscribite"  href="inscribite.html">Inscribite</a>
-            </div>
-          </div>
+    <div class="container-fluid">
+        <a href="../index.html">
+        <img src="../imagenes/logo.png" alt="logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end menuMovil" id="navbarNav">
+        <ul class="navbar-nav navMenu">
+            <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="novedades.html">Novedades</a>
+            </li>
+            <li>
+                <a class="nav-link inscribite"  href="inscribite.html">Inscribite</a> 
+            </li>
+        </ul>
         </div>
-      </nav>
+    </div>
+    </nav>
 </header>
+
 
     <h2 class="tituloInscribite">Forma parte de fitgroup</h2>
 
-<section>
+<form action="" class="contenedorFormulario">
 
-    <div class="contenedorFormulario">
+    <div class="formulario">
+        <label for="nombreCompleto" id="nombreCompleto" name="nombreCompleto">Nombre y apellido:</label>
+        <input type="text" name="Nombre y Apellido" id="" placeholder="Nombre y apellido" class="input">
 
-        <div class="formulario">
-            <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" class="input">
-            <input type="number" name="D.N.I" placeholder="D.N.I" class="input">
-            <input type="number" name="Telefono" placeholder="Telefono" class="input">
-            <input type="email" name="Email" placeholder="Email" class="input">
-        </div>
+        <label for="numeroDNI" id="numeroDNI" name="numeroDNI">D.N.I:</label>
+        <input type="number" name="numeroDNI" id="numeroDNI" placeholder="D.N.I" class="input">
+
+        <label for="email" id="email" name="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="email@gmail.com" class="input">
+
+        <label for="telefono" id="telefono" name="telefono">Telefono:</label>
+        <input type="number" name="telefono" id="telefono" placeholder="Telefono" class="input">
+
     </div>
+    <section class="planes">
 
-</section>
+        <button class="planes-opciones">
+            <div class="contenidoPlanes">
+            <h3 class="tituloPlanes">Musculacion - Funcional</h3>
+            <p class="horarioPlanes">Lun a viern de 9 a 22 hs</p>
+            </div>
+        </button>
+    
+        <button class="planes-opciones">
+            <div class="contenidoPlanes">
+            <h3 class="tituloPlanes">Tela Acrobática</h3>
+            <p class="horarioPlanes">Mar y jue de 19 a 20:30hs</p>
+            </div>
+        </button>
+    
+        <button class="planes-opciones">
+            <div class="contenidoPlanes">
+            <h3 class="tituloPlanes">Palo chino</h3>
+            <p class="horarioPlanes">Lun y mierc de 19 a 20:30hs</p>
+            </div>
+    
+    </section>
+    <div class="contenedorBoton">
 
-<section class="planes">
-
-    <button class="planes-opciones">
-        <div class="contenidoPlanes">
-        <h3 class="tituloPlanes">Musculacion - Funcional</h3>
-        <p class="horarioPlanes">Lun a viern de 9 a 22 hs</p>
-        </div>
-    </button>
-
-    <button class="planes-opciones">
-        <div class="contenidoPlanes">
-        <h3 class="tituloPlanes">Tela</h3>
-        <p class="horarioPlanes">Mar y jue de 19 a 20:30hs</p>
-        </div>
-    </button>
-
-    <button class="planes-opciones">
-        <div class="contenidoPlanes">
-        <h3 class="tituloPlanes">Palo chino</h3>
-        <p class="horarioPlanes">Lun y mierc de 19 a 20:30hs</p>
-        </div>
-
-</section>
-
-<div class="contenedorBoton">
-
-<button class="botonInscribite">INSCRIBITE</button>
-
-</div>
+        <button class="botonInscribite">INSCRIBITE</button>
+        
+        </div> -->
+        
+</form>
 
     <!--pie de pagina -->
 
@@ -100,6 +116,7 @@
         <div class="newsletter">
             <p>Newsletter</p>
             <input type="text">
+            <button type="submit">Enviar</button>
         </div>
 
         <div class="redes">

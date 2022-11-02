@@ -18,21 +18,26 @@
     }
 
     .contenedorFormulario {
-        display: flex;
-        justify-content: center;
+
 
         .formulario {
             display: flex;
             flex-direction: column;
             width: 35rem;
+            margin: 0 auto;
 
             @media only screen and (max-width:450px){
                 width: 30rem;
             }
 
-            .input {    
-                
+            label {
                 margin-top: 10%;
+                color: nth($colores, 3);
+                font-size:nth($font-size, 1); 
+            }
+
+            .input {    
+
                 font-size: nth($font-size, 2);
                 border-radius: 1.5rem;
                 padding: 1rem;
@@ -59,10 +64,10 @@
             width: 25rem;
             height: 20rem;
             background-color: nth($colores, 2);
-            border: solid 0.4rem 1rem nth($colores, 3);
+            box-shadow: 0.5rem 0.5rem 0.25rem  #9cc5d681;
             border-radius: 10%;
-            transition: all 1s ease;
-            
+            transition: all 1.5s ease;
+
             &:hover {
                 background-color:nth($colores, 1);
             }

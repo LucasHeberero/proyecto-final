@@ -9,7 +9,7 @@
     border-top: solid 2px nth($colores, 4);
 
     .newsletter{
-        width: 30rem;
+        width: 40rem;
         margin-left: 1.5rem;
         padding: 1rem;
 
@@ -33,6 +33,15 @@
                 font-size: nth($font-size, 1);
             }
 
+            button{
+                margin: 0 0.2rem;
+                padding: 0.5rem;
+                border: nth($colores, 3);
+                border-radius: 10%;
+                background-color:nth($colores, 2);
+                color: nth($colores, 4);
+            }
+
     }
 
     .redes {
@@ -43,19 +52,19 @@
         .whatsapp {
             font-size: 3rem;
             padding: 0.5rem;
-            color: green;
+            color: nth($colores, 4);
         }
         
         .facebook {
             font-size: 3rem;
             padding: 0.5rem;
-            color: blue;
+            color: nth($colores, 4);
         }
         
         .instagram {
             font-size: 3rem;
             padding: 0.5rem;
-            color:rgba(252, 40, 146, 0.781);
+            color: nth($colores, 4);
         }
 
     }

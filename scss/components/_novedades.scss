@@ -54,6 +54,7 @@
                 height: 17em;
                 max-width: 20rem;
                 max-height: 20rem;
+                box-shadow: 0.5rem 0.5rem 0.25rem  #9ac3d441;
                 
             }
         }
@@ -62,9 +63,11 @@
             .tituloNota {
                 color: nth($colores, 4);
                 font-size: 2rem;
+                text-decoration: none;
 
                 &:hover {
                     color: nth($colores, 3);
+                    text-decoration: underline;
                 }
 
                 @media only screen and (max-width:450px){

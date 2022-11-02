@@ -9,39 +9,47 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  font-display: swap;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .encabezado {
-  height: 5.5rem;
+  height: 6rem;
   background-color: rgb(44, 51, 51);
   border-bottom: solid rgb(143, 227, 207);
 }
 .encabezado .logo {
   width: 6rem;
 }
-.encabezado .navMenu {
+.encabezado .menuMovil {
+  background-color: rgb(44, 51, 51) !important;
+  z-index: 1 !important;
+}
+@media only screen and (min-width: 992px) {
+  .encabezado .menuMovil {
+    height: 4rem !important;
+  }
+}
+.encabezado .menuMovil .navMenu {
   font-size: 1.5rem;
   margin: 1rem;
 }
-.encabezado .navMenu a {
+.encabezado .menuMovil .navMenu a {
   color: rgb(231, 246, 242);
   padding: 1rem;
   margin: 1rem;
   transition: 0s;
 }
-.encabezado .navMenu a:hover {
+.encabezado .menuMovil .navMenu a:hover {
   border-radius: 1rem;
   background-color: rgb(143, 227, 207);
   color: rgb(44, 51, 51);
 }
-.encabezado .navMenu .inscribite {
+.encabezado .menuMovil .navMenu .inscribite {
   border-radius: 1rem;
   background-color: rgb(143, 227, 207);
   color: rgb(44, 51, 51);
 }
-.encabezado .navMenu .inscribite:hover {
+.encabezado .menuMovil .navMenu .inscribite:hover {
   color: rgb(231, 246, 242);
 }
 
@@ -56,7 +64,7 @@ body {
   border-top: solid 2px rgb(143, 227, 207);
 }
 .footer .newsletter {
-  width: 30rem;
+  width: 40rem;
   margin-left: 1.5rem;
   padding: 1rem;
 }
@@ -78,6 +86,14 @@ body {
   border-radius: 0.5rem;
   font-size: 1.2rem;
 }
+.footer .newsletter button {
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+  border: rgb(231, 246, 242);
+  border-radius: 10%;
+  background-color: rgb(57, 91, 100);
+  color: rgb(143, 227, 207);
+}
 .footer .redes {
   width: 20rem;
   display: flex;
@@ -86,17 +102,17 @@ body {
 .footer .redes .whatsapp {
   font-size: 3rem;
   padding: 0.5rem;
-  color: green;
+  color: rgb(143, 227, 207);
 }
 .footer .redes .facebook {
   font-size: 3rem;
   padding: 0.5rem;
-  color: blue;
+  color: rgb(143, 227, 207);
 }
 .footer .redes .instagram {
   font-size: 3rem;
   padding: 0.5rem;
-  color: rgba(252, 40, 146, 0.781);
+  color: rgb(143, 227, 207);
 }
 
 video {
@@ -290,7 +306,7 @@ video {
 }
 @media only screen and (max-width: 450px) {
   .bodyNosotros .equipo .entrenador {
-    width: 90%;
+    width: 95%;
   }
 }
 .bodyNosotros .equipo .entrenador img {
@@ -307,6 +323,11 @@ video {
   font-size: 1.8rem;
   text-align: justify;
   padding: 1rem;
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .equipo .entrenador p {
+    font-size: 1.5rem;
+  }
 }
 .bodyNosotros .tituloContacto {
   margin: 2rem;
@@ -336,9 +357,22 @@ video {
 .bodyNosotros .contacto iframe {
   width: 35rem;
   height: 30rem;
+  margin: 1.5rem;
+  box-shadow: 1rem 1rem 0.5rem rgba(154, 195, 212, 0.2549019608);
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .contacto iframe {
+    margin: 0 auto;
+    width: 30rem;
+  }
 }
 .bodyNosotros .contacto div {
   margin-right: 10%;
+}
+@media only screen and (max-width: 450px) {
+  .bodyNosotros .contacto div {
+    padding: 1.5rem;
+  }
 }
 .bodyNosotros .contacto div h4 {
   color: rgb(231, 246, 242);
@@ -438,13 +472,16 @@ video {
   height: 17em;
   max-width: 20rem;
   max-height: 20rem;
+  box-shadow: 0.5rem 0.5rem 0.25rem rgba(154, 195, 212, 0.2549019608);
 }
 .bodyNovedades .parent .contenidoNota .tituloNota {
   color: rgb(143, 227, 207);
   font-size: 2rem;
+  text-decoration: none;
 }
 .bodyNovedades .parent .contenidoNota .tituloNota:hover {
   color: rgb(231, 246, 242);
+  text-decoration: underline;
 }
 @media only screen and (max-width: 450px) {
   .bodyNovedades .parent .contenidoNota .tituloNota {
@@ -478,22 +515,23 @@ video {
     font-size: 3rem;
   }
 }
-.bodyInscribite .contenedorFormulario {
-  display: flex;
-  justify-content: center;
-}
 .bodyInscribite .contenedorFormulario .formulario {
   display: flex;
   flex-direction: column;
   width: 35rem;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 450px) {
   .bodyInscribite .contenedorFormulario .formulario {
     width: 30rem;
   }
 }
-.bodyInscribite .contenedorFormulario .formulario .input {
+.bodyInscribite .contenedorFormulario .formulario label {
   margin-top: 10%;
+  color: rgb(231, 246, 242);
+  font-size: 1.2rem;
+}
+.bodyInscribite .contenedorFormulario .formulario .input {
   font-size: 1.5rem;
   border-radius: 1.5rem;
   padding: 1rem;
@@ -519,9 +557,9 @@ video {
   width: 25rem;
   height: 20rem;
   background-color: rgb(57, 91, 100);
-  border: solid 0.4rem 1rem rgb(231, 246, 242);
+  box-shadow: 0.5rem 0.5rem 0.25rem rgba(156, 197, 214, 0.5058823529);
   border-radius: 10%;
-  transition: all 1s ease;
+  transition: all 1.5s ease;
 }
 .bodyInscribite .planes .planes-opciones:hover {
   background-color: rgb(44, 51, 51);
